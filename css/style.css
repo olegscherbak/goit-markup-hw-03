@@ -213,6 +213,7 @@ li {
 }
 .master-team {
   padding-top: 30px;
+  text-align: center;
 }
 .section-team-paragraf {
   font-size: 16px;
@@ -228,12 +229,22 @@ li {
 }
 .section-team-item {
   list-style-type: none;
-  flex-basis: calc(100% - 120px) / 4;
   margin-left: 30px;
   margin-top: 30px;
+  flex-basis: calc((100% - 120px) / 4);
+  background: var(--hero-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
-.section-team {
-  background: #f5f4fa;
+.section-team-title {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.section-team-paragraf {
+  text-align: center;
+  margin-bottom: 30px;
 }
 /* ========== END SECTION TEAM ========== */
 
@@ -317,7 +328,7 @@ address {
 }
 .portfolio-lis {
   list-style-type: none;
-  flex-basis: calc(100% - 270px) / 9;
+  flex-basis: calc((100% - 270px) / 9);
   margin-left: 30px;
   margin-top: 30px;
 }
