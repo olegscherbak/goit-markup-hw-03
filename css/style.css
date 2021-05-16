@@ -8,6 +8,7 @@
   --contact-color: rgba(255, 255, 255, 0.6);
   --btn-color: #f5f4fa;
   --product-color: #eeeeee;
+  --border-color: #ececec;
 }
 
 h1,
@@ -63,12 +64,14 @@ li {
 
 .list-navigation {
   display: flex;
+  margin-left: auto;
 }
 /* ========== HEADER ========== */
 
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .link-logo {
@@ -78,6 +81,7 @@ li {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--accent-color);
+  margin-right: 93px;
 }
 .link-logo-black {
   font-family: Raleway;
@@ -85,7 +89,6 @@ li {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--logo-color);
-  margin-right: 93px;
 }
 .list-navigation-item:not(:last-child) {
   margin-right: 50px;
@@ -131,6 +134,7 @@ li {
   padding-bottom: 200px;
 }
 .hero-title {
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
@@ -167,6 +171,21 @@ li {
   color: var(--head-color);
   margin-bottom: 50px;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section-features {
+  padding-top: 94px;
+}
 .section-features-title {
   font-size: 14px;
   line-height: 1.14;
@@ -194,14 +213,14 @@ li {
 }
 /* ========== END SECTION FEATURES ========== */
 
-/* ========== SECTION WORD ========== */
+/* ========== SECTION WORK ========== */
 .section-work-item {
-  flex-basis: calc(100% - 90px) / 3;
+  flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
   list-style-type: none;
 }
-/* ========== END SECTION WORD ========== */
+/* ========== END SECTION WORK ========== */
 
 /* ========== SECTION TEAM ========== */
 .section-team-title {
@@ -246,6 +265,10 @@ li {
   text-align: center;
   margin-bottom: 30px;
 }
+.master-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 /* ========== END SECTION TEAM ========== */
 
 /* ========== FOOTER ========== */
@@ -261,12 +284,18 @@ address {
 .link-logo-white {
   color: var(--hero-color);
 }
-.Country {
+.country {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--hero-color);
+}
+.location {
+  margin-bottom: 9px;
+}
+.email {
+  margin-bottom: 9px;
 }
 .footer-address {
   font-style: normal;
@@ -292,8 +321,10 @@ address {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   padding-left: 22px;
+  padding-right: 22px;
   background: var(--btn-color);
   border-radius: 4px;
   border-color: transparent;
@@ -304,8 +335,8 @@ address {
   color: var(--hero-color);
   cursor: pointer;
 }
-.section-portfolio-item {
-  list-style-type: none;
+.btn-item:not(:last-child) {
+  margin-right: 8px;
 }
 .portfolio-title {
   font-weight: bold;
@@ -337,6 +368,7 @@ address {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
+  border-top: none;
   border: 1px solid var(--product-color);
   background: var(--hero-color);
 }
@@ -345,8 +377,6 @@ address {
 }
 .portfolio-btn-list {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 34px;
-  margin-left: 280px;
-  margin-right: 279px;
+  justify-content: center;
+  margin-bottom: 50px;
 }
