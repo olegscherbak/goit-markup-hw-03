@@ -230,14 +230,11 @@ li {
   color: var(--head-color);
   margin-bottom: 10px;
 }
-.master-team {
-  padding-top: 30px;
-  text-align: center;
-}
 .section-team-paragraf {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--title-color);
 }
 .master {
@@ -258,16 +255,15 @@ li {
 }
 .section-team-title {
   text-align: center;
-  margin-top: 30px;
   margin-bottom: 10px;
-}
-.section-team-paragraf {
-  text-align: center;
-  margin-bottom: 30px;
 }
 .master-item {
   padding-top: 30px;
   padding-bottom: 30px;
+  text-align: center;
+}
+.section-team {
+  background: var(--btn-color);
 }
 /* ========== END SECTION TEAM ========== */
 
@@ -311,6 +307,9 @@ address {
 .footer-address:hover,
 .footer-address:focus {
   color: var(--accent-color);
+}
+.logofoot {
+  margin: 0 auto;
 }
 /* ========== END FOOTER ========== */
 
@@ -359,7 +358,7 @@ address {
 }
 .portfolio-lis {
   list-style-type: none;
-  flex-basis: calc((100% - 270px) / 9);
+  flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
 }
